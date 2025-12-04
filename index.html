@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Lenda do Farol Esquecido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <p>Você é um aventureiro que recebe um mapa misterioso indicando a **Ilha Nebulosa**, onde se diz existir um tesouro escondido no topo de um antigo farol desativado. Você chega ao cais de desembarque. O caminho principal está bloqueado por destroços.</p>
+            <button class="btn-proximo" data-proximo="1">Seguir pela trilha da floresta</button>
+            <button class="btn-proximo" data-proximo="2">Tentar desviar pela praia rochosa</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>A trilha da floresta é densa e escura. Você ouve um som estranho. Vê uma velha estátua de pedra com um enigma gravado e um atalho estreito ao lado.</p>
+            <button class="btn-proximo" data-proximo="3">Tentar resolver o enigma da estátua</button>
+            <button class="btn-proximo" data-proximo="4">Pegar o atalho estreito</button>
+        </div>
+        
+        <div class="passo" id="passo-2">
+            <p>A praia rochosa é perigosa. Você tropeça e vê que o mapa caiu perto de uma pequena fenda na rocha. Você tenta pegá-lo, mas uma onda forte se aproxima.</p>
+            <button class="btn-proximo" data-proximo="5">Arriscar pegar o mapa antes da onda</button>
+            <button class="btn-proximo" data-proximo="1">Recuar para a trilha da floresta</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>Você resolve o enigma e a estátua revela um túnel secreto que o leva diretamente para a base do Farol.</p>
+            <button class="btn-proximo" data-proximo="7">Entrar na base do Farol</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>O atalho era uma armadilha! Você cai em um buraco, se machuca e perde um dia precioso. Tem que voltar ao início da floresta.</p>
+            <button class="btn-proximo" data-proximo="1">Voltar ao início da floresta</button>
+        </div>
+        
+        <div class="passo" id="passo-5">
+            <p>Você conseguiu pegar o mapa, mas a onda te atingiu com força e você perdeu seu equipamento essencial. A aventura é muito arriscada sem ele.</p>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Você decide voltar e resolver o enigma da estátua, que o leva à base do Farol.</p>
+            <button class="btn-proximo" data-proximo="7">Entrar na base do Farol</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Você está na base do Farol. A escada principal parece quebrada. Há um elevador de serviço, mas ele requer eletricidade, e uma escada de emergência externa, coberta de musgo.</p>
+            <button class="btn-proximo" data-proximo="8">Procurar a chave da sala de máquinas para ligar o elevador</button>
+            <button class="btn-proximo" data-proximo="9">Subir pela escada de emergência externa</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Você encontra a chave! Liga o elevador, que faz um barulho alto, mas te leva em segurança ao topo.</p>
+            <button class="btn-proximo" data-proximo="10">Chegar ao topo do Farol</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>A escada externa é traiçoeira. Você escorrega e consegue se segurar, mas perde tempo e tem que voltar à base.</p>
+            <button class="btn-proximo" data-proximo="7">Voltar à base do Farol</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você chega ao topo do Farol! O tesouro não é ouro, mas um diário do antigo faroleiro revelando a localização de um antigo navio naufragado cheio de joias. Você encontrou a verdadeira lenda da ilha!</p>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
